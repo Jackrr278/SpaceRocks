@@ -1,6 +1,7 @@
 package org.jackrr;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class Main {
         gameWindow.setVisible(true);
 
         Timer gameTimer = new Timer(5, e -> {
-            gamePanel.moveRect(1);
+            gamePanel.updateUI();
         });
         gameTimer.start();
     }
