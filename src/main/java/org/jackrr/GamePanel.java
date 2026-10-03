@@ -16,8 +16,8 @@ public class GamePanel extends JPanel {
 
     }
 
-    void moveRect() {
-        posX = posX + 5;
+    public void moveRect(int speed) {
+        posX = posX + speed;
         repaint();
     }
 }
