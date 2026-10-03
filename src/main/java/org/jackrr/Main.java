@@ -15,5 +15,9 @@ public class Main {
         gameWindow.add(gamePanel);
         gameWindow.setVisible(true);
 
+        Timer gameTimer = new Timer(16, e -> {
+            gamePanel.moveRect();
+        });
+        gameTimer.start();
     }
 }
